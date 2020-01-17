@@ -1,3 +1,9 @@
 [build]
 base = "site"
 publish = "output"
+
+[build.lifecycle]
+onBuild = "echo $TEST_ENVIRONMENT_VARIABLE"
+
+[build.environment]
+  TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
