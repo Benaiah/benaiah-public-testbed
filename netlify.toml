@@ -2,5 +2,8 @@
 base = "site"
 publish = "output"
 
+[build.lifecycle]
+onInit = "pwd"
+
 [build.environment]
-  TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
+TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
