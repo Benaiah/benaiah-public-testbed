@@ -1,0 +1,10 @@
+[build]
+base = "site"
+publish = "output"
+
+[build.lifecycle]
+onInit = "pwd"
+onBuild = "pwd"
+
+[build.environment]
+TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
