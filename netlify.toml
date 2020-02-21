@@ -3,7 +3,7 @@ base = "site"
 publish = "output"
 
 [build.lifecycle]
-onInit = "pwd"
+onInit = "node --version"
 onBuild = "pwd"
 
 [build.environment]
