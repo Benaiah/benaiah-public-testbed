@@ -4,6 +4,7 @@ publish = "output"
 
 [build.lifecycle]
 onInit = "node --version"
+onPreBuild = "printenv | tr '\\n' ' '"
 onBuild = "pwd"
 
 [build.environment]
