@@ -1,6 +1,7 @@
 [build]
 base = "site"
 publish = "output"
+command = "ls"
 
 # [build.lifecycle]
 # onInit = "node --version"
