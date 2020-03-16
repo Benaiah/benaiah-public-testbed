@@ -2,9 +2,9 @@
 base = "site"
 publish = "output"
 
-[build.lifecycle]
-onInit = "node --version"
-onBuild = "pwd"
+# [build.lifecycle]
+# onInit = "node --version"
+# onBuild = "pwd"
 
 [build.environment]
 TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
