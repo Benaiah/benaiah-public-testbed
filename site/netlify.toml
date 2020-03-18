@@ -1,5 +1,4 @@
 [build]
-base = "site"
 publish = "output"
 
 [build.lifecycle]
