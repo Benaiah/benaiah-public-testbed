@@ -1,7 +1,2 @@
-[build.lifecycle]
-onInit = "node --version"
-onPreBuild = "printenv | tr '\\n' ' '"
-onBuild = "pwd"
-
-[build.environment]
-TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
+[build]
+base = "site"
