@@ -3,8 +3,7 @@ publish = "output"
 
 [build.lifecycle]
 onBuild = "mkdir -p output && cp index.html output/index.html"
-onPostBuild = "printenv | tr '\n' ' '"
-onInvalid = "invalid build command"
+onPostBuild = "printenv | grep TEST_ENVIRONMENT_VARIABLE | tr '\n' ' '"
 
 [build.environment]
 TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
