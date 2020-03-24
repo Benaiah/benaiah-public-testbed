@@ -1,5 +1,5 @@
 [build]
-publish = "output"
+publish = "/"
 
 [build.lifecycle]
 onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
