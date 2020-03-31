@@ -1,5 +1,6 @@
 [build]
 publish = "/output"
+command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && cat /usr/local/bin/build"
 
 [build.lifecycle]
 onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && cat /usr/local/bin/build"
