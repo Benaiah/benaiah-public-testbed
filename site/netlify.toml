@@ -2,7 +2,7 @@
 publish = "/output"
 
 [build.lifecycle]
-onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
+onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && cat /usr/local/bin/build"
 onPostBuild = "printenv | grep TEST_ENVIRONMENT_VARIABLE | tr '\n' ' '"
 
 [build.environment]
