@@ -1,5 +1,6 @@
 [build]
 publish = "/output"
+functions = "/functions"
 command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && cat /usr/local/bin/build"
 
 [build.lifecycle]
@@ -8,3 +9,4 @@ onPostBuild = "printenv | grep TEST_ENVIRONMENT_VARIABLE | tr '\n' ' '"
 
 [build.environment]
 TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
+ZISI_VERSION = "0.4.0-9"
