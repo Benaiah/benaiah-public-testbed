@@ -1,10 +1,9 @@
 [build]
 publish = "/output"
 functions = "/functions"
-command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
 
 [build.lifecycle]
-onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
+onBuild = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && ls $NVM_DIR/versions/node"
 onPostBuild = "printenv | grep TEST_ENVIRONMENT_VARIABLE | tr '\n' ' '"
 
 [build.environment]
