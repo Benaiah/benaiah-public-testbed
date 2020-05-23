@@ -1,8 +1,6 @@
 [build]
 publish = "/output"
 functions = "/functions"
-
-[build]
 command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && ls $NVM_DIR/versions/node"
 
 [build.environment]
