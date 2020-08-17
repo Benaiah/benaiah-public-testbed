@@ -1,7 +1,6 @@
 [build]
 publish = "/output"
-functions = "/functions"
-command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && ls $NVM_DIR/versions/node && echo \"SOCKET: $(file /tmp/netlify-buildbot-socket)\""
+command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
 
 [build.environment]
 TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
