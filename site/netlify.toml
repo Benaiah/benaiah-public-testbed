@@ -1,6 +1,6 @@
 [build]
 publish = "/output"
-command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
+command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html && rm -rf output"
 
 [build.environment]
 TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
