@@ -1,7 +1,0 @@
-[build]
-publish = "/output"
-command = "echo $(pwd) && mkdir -p output && cp index.html output/index.html"
-
-[build.environment]
-TEST_ENVIRONMENT_VARIABLE = "ECHO_THIS"
-ZISI_VERSION = "0.4.0-9"
