@@ -1,3 +1,4 @@
 [build]
 
+command = "cat /tmp/netlify_config.json"
 publish = "output"
